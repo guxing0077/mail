@@ -4,13 +4,12 @@ import com.lee.dto.MailDTO;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.util.Properties;
 import javax.mail.Message;
-import javax.mail.NoSuchProviderException;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.util.Properties;
 
 /**
  * @ClassName: Sendmail
@@ -20,7 +19,7 @@ import javax.mail.internet.MimeMessage;
  *
  */
 @Component
-public class SendMail {
+public class SendMailComponent {
 
     @Value("${mail.host}")
     private String mailHost;

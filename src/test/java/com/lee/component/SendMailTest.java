@@ -5,12 +5,10 @@ import com.lee.dto.MailDTO;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import static org.junit.Assert.*;
-
 public class SendMailTest extends BaseTest {
 
     @Autowired
-    private SendMail sendMail;
+    private SendMailComponent sendMail;
 
     @Test
     public void sendMail() throws Exception {
